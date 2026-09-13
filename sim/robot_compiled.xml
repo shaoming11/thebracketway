@@ -1,0 +1,78 @@
+<mujoco model="chopped_urdf_v2">
+  <compiler angle="radian"/>
+
+  <worldbody>
+    <body name="shoulder__shoulder" pos="7.84414e-09 -0.0275 1.43612" quat="1 4.62413e-12 1.8366e-06 1.42623e-07">
+      <inertial pos="-0.00112096 -0.045177 -0.0613611" quat="0.995158 -0.0200877 0.00853993 -0.0958308" mass="0.0012772" diaginertia="3.08157e-06 3.00365e-06 9.35511e-07"/>
+      <joint name="rj0" pos="0 0 0" axis="0 0 1" type="slide" range="-1.03044 0" actuatorfrcrange="-10 10"/>
+      <body name="shoulder_knuckle__shoulder_knuckle" pos="-0.00793877 -0.0857475 -0.144638" quat="0.76632 0.608761 -1.00888e-06 -0.205336">
+        <inertial pos="-0.00359973 -0.0351324 -0.032679" quat="0.0694297 0.857532 0.164673 0.48239" mass="0.000133846" diaginertia="1.845e-07 1.38698e-07 1.23043e-07"/>
+        <joint name="rj1" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+        <body name="bicep__bicep" pos="-0.0345871 -0.0799863 -0.0310962" quat="0.425282 0.427297 0.563398 0.56492">
+          <inertial pos="-0.0785516 -0.0221701 0.0425789" quat="0.591068 0.0722922 0.0639596 0.800826" mass="0.000746498" diaginertia="2.22041e-06 2.1708e-06 5.35922e-07"/>
+          <joint name="rj2" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+          <body name="forearm__forearm" pos="-0.140146 -0.0763873 0.0558851" quat="0.62745 -0.367259 -0.485501 -0.485505">
+            <inertial pos="-0.021107 -0.0683187 0.0331311" quat="0.996546 -0.00812882 -0.0576654 0.0591932" mass="0.000376819" diaginertia="6.21702e-07 5.21008e-07 2.90638e-07"/>
+            <joint name="rj3" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+            <body name="forearm_rotation__forearm_rotation" pos="-0.026394 -0.12487 0.0320705" quat="0.294631 -0.264653 0.65568 0.642834">
+              <inertial pos="3.56774e-05 2.45812e-05 -0.021805" quat="0.63268 0.00171299 0.00374296 0.774403" mass="6.64039e-05" diaginertia="2.28043e-08 1.96823e-08 1.64393e-08"/>
+              <joint name="rj4" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+              <body name="wrist_knuckle__wrist_knuckle" pos="-0.0131274 -0.014875 -0.0327431" quat="0.668883 0.356813 -0.610479 0.229338">
+                <inertial pos="-0.0218344 -0.00560663 -0.02105" quat="-0.0884246 0.708648 0.053519 0.69795" mass="4.23359e-05" diaginertia="2.23246e-08 2.15936e-08 2.14405e-08"/>
+                <joint name="rj5" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+                <body name="hand__hand" pos="-0.0480111 0.0111602 -0.0199286" quat="0.504103 -0.402362 -0.581468 -0.495863">
+                  <inertial pos="0.0115522 -0.030212 -0.0204843" quat="0.222065 0.375214 0.156399 0.886251" mass="0.000139857" diaginertia="1.34348e-07 1.30549e-07 1.01691e-07"/>
+                  <joint name="rj6" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+                  <body name="left_finger__left_finger" pos="0.0413008 -0.0450476 -0.0372147" quat="0.504688 0.364974 0.605635 0.495268">
+                    <inertial pos="-0.0340814 -0.00413194 -0.0245907" quat="0.629243 0.0482231 0.0863023 0.770896" mass="4.61241e-05" diaginertia="5.87004e-08 4.45028e-08 1.8338e-08"/>
+                    <joint name="right_left_gripper" pos="0 0 0" axis="0 0 1" range="0 1" actuatorfrcrange="-10 10"/>
+                  </body>
+                  <body name="right_finger__right_finger" pos="0.0413009 -0.0450476 -0.00313575" quat="0.520146 0.586412 -0.395122 -0.479008">
+                    <inertial pos="0.0348601 -0.000281218 0.0243554" quat="0.624049 0.119738 0.01936 0.771914" mass="4.56895e-05" diaginertia="5.79256e-08 4.38695e-08 1.81194e-08"/>
+                    <joint name="right_right_gripper" pos="0 0 0" axis="0 0 1" range="0 1" actuatorfrcrange="-10 10"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="l_shoulder__shoulder" pos="-7.84415e-09 0.0275 1.43612" quat="1 2.65358e-06 1.8366e-06 1.42623e-07">
+      <inertial pos="-0.00112096 0.045177 -0.0613611" quat="0.995158 0.0200877 0.00853993 0.0958308" mass="0.0012772" diaginertia="3.08157e-06 3.00365e-06 9.35511e-07"/>
+      <joint name="lj0" pos="0 0 0" axis="0 0 1" type="slide" range="-1.03044 0" actuatorfrcrange="-10 10"/>
+      <body name="l_shoulder_knuckle__shoulder_knuckle" pos="-0.00793877 0.0857475 -0.144638" quat="0.588018 0.793353 7.74139e-07 0.15756">
+        <inertial pos="-0.0206837 -0.0286257 0.032679" quat="-0.0694297 0.857532 -0.164673 0.48239" mass="0.000133846" diaginertia="1.845e-07 1.38698e-07 1.23043e-07"/>
+        <joint name="lj1" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+        <body name="l_bicep__bicep" pos="-0.0699464 -0.0519767 0.0310962" quat="0.558556 0.557003 0.4356 0.433608">
+          <inertial pos="-0.0785516 0.0221701 0.0425789" quat="0.800826 0.0639596 0.0722922 0.591068" mass="0.000746498" diaginertia="2.22041e-06 2.1708e-06 5.35922e-07"/>
+          <joint name="lj2" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+          <body name="l_forearm__forearm" pos="-0.140146 0.0763873 0.0558851" quat="-0.36555 0.625739 0.487709 0.486789">
+            <inertial pos="-0.0206259 -0.0684655 -0.0331311" quat="0.996487 -0.00484689 -0.0594162 0.0588142" mass="0.000376819" diaginertia="6.21768e-07 5.21185e-07 2.90395e-07"/>
+            <joint name="lj3" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+            <body name="l_forearm_rotation__forearm_rotation" pos="-0.0255151 -0.125052 -0.0320705" quat="-0.266957 0.292369 0.643866 0.654745">
+              <inertial pos="3.56774e-05 -2.45812e-05 -0.021805" quat="0.774403 0.00374296 0.00171299 0.63268" mass="6.64039e-05" diaginertia="2.28043e-08 1.96823e-08 1.64393e-08"/>
+              <joint name="lj4" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+              <body name="l_wrist_knuckle__wrist_knuckle" pos="-0.0131274 0.014875 -0.0327431" quat="0.668883 -0.356813 -0.610479 -0.229338">
+                <inertial pos="-0.0218344 0.00560663 -0.02105" quat="0.0884246 0.708648 -0.053519 0.69795" mass="4.23359e-05" diaginertia="2.23246e-08 2.15936e-08 2.14405e-08"/>
+                <joint name="lj5" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+                <body name="l_hand__hand" pos="-0.0480111 -0.0111602 -0.0199286" quat="0.509963 -0.592647 -0.385706 -0.489834">
+                  <inertial pos="-0.00113831 -0.0323253 0.0204843" quat="-0.109904 0.398005 -0.0856513 0.90674" mass="0.000139857" diaginertia="1.33631e-07 1.31924e-07 1.01033e-07"/>
+                  <joint name="lj6" pos="0 0 0" axis="0 0 1" range="-2.0944 2.0944" actuatorfrcrange="-10 10"/>
+                  <body name="l_left_finger__left_finger" pos="0.0204743 -0.0575834 0.0372147" quat="0.496119 0.414495 -0.572882 -0.503851">
+                    <inertial pos="0.0329639 -0.00959125 0.0245907" quat="0.770896 0.0863023 0.0482231 0.629243" mass="4.61241e-05" diaginertia="5.87004e-08 4.45028e-08 1.8338e-08"/>
+                    <joint name="left_left_gripper" pos="0 0 0" axis="0 0 1" range="0 1" actuatorfrcrange="-10 10"/>
+                  </body>
+                  <body name="l_right_finger__right_finger" pos="0.0204743 -0.0575834 0.00313575" quat="0.478128 0.593102 0.385006 0.520954">
+                    <inertial pos="-0.0319461 0.0139555 -0.0243554" quat="0.771914 0.01936 0.119738 0.624049" mass="4.56895e-05" diaginertia="5.79256e-08 4.38695e-08 1.81194e-08"/>
+                    <joint name="left_right_gripper" pos="0 0 0" axis="0 0 1" range="0 1" actuatorfrcrange="-10 10"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
