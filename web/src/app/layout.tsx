@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BracketWay",
-  description: "Voice-Activated Sandwich Robot",
+  title: "The Brackey Way",
+  description: "Sandwich-making robot powered by pi0.5 VLA policies",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
